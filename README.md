@@ -34,6 +34,8 @@ If you work on the project on F/Sat/Sun and feel like you need more feedback ple
 
 By the end of the day on Monday, 2/24, each member should submit the link to this repo on the Moodle page. If more group feedback is requested, please have that done by Monday evening. Again, document this in the task folder README.md
 
+**Note: You should save your google Colab document in gitHub as you work. Failure to show consistent updating of the notebook may result in a deduction of that member's points.**
+
 ## (Hard) Project Submission Date (due Wednesday, 2/26)
 
 The link should already be submitted by Monday. No more edits to documents should be made after this date! 
