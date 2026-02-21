@@ -10,5 +10,12 @@ Please replace “Feedback giver #x” with a group member’s name below and ad
   - Otherwise, I think this is very well-written code and will be a strong component of our project.
 
 
-- Feedback giver #2
-  + item
+- Lanette Tyler
+  - In the data cleaning, values of -200 for CO(GT) are dropped. I think it should be values of -200 for  PT08.S1(CO) that are dropped. I think Dr. Post's Task 1 assignment had a typo on that step. There was a brief discussion about it in slack, and it makes more sense to do it that way since it's PT08.S1(CO) used in the rest of the code. Maybe that change would make the b1 value from the SLR gradient descent positive. (I haven't looked to see what the actual difference in dropped rows would be, if any.)
+  - The negative value for b1 from the SLR gradient descent doesn't necessarily bother me. You used the same starting values he did. It is very close to zero, as is Dr. Post's positive value, so not far off even if the sign changes.
+  - Copy editing:
+    - Add a heading for the SLR Gradient Descent section
+    - Delete the comma at the end of the first bullet point under "Evaluate RMSE across the grid and choose the best c" sub-heading
+    - Drop the number six from "Grid search for SLR parameters (b0, b1)" sub-heading
+  - You did a fabulous job with coding and explaning. The Gradient Descent description is particularly good - short, simple, and easy to understand.
+
