@@ -10,5 +10,12 @@ Please replace “Feedback giver #x” with a group member’s name below and ad
   + I was initially taken aback that you found the MLR with the weather conditions to be the better predictor. The correlation coefficients between benzene and the individual weather variables were low. Then I realized it was the time series inclusion that made the difference. The correlation coefficients are of all values without regard to time. I'll take another hard look at the time series visualizations included in the Task 2 notebook.
   + The coding and outputs looked great to me. Elegant coding, professional look to everything. This is the first time I've seen a Libraries Used list with explanations of the purpose. That's a very nice touch, especially for the audience.
 
-- Feedback giver #2
-  + item
+- Alex Devoid
+  - I appreciated how you described that your observation of `temporal trends and fluctuations`confirms that traditoinal cross validation would not be approriate. 
+  - You could add for quick context, how many rows were droped when you `print(f"Rows remaining after removing -200 values: {len(df_clean)}")`.
+  - In `df_clean['Date'] = pd.to_datetime(df_clean['Date'])`  adding `dayfirst=` would order days for you. Or you could sort by date before `df_daily['Day'] = range(1, len(df_daily) + 1)`.  
+  - It is helpful to see the row count as a result of `print(f"Number of unique dates (rows): {len(df_daily)}")` after you calcuated the daily averages to contexualize how many days we are working with. You could also add how many days were removed for additional context.
+  - You refernce `df_daily['Day']` in both cross-validation functoins (`day_col = df_daily['Day']` and `final_day = df_daily['Day'].max()`). You could pass the day series as arguments instead, so as to remove the global dependicy on `df_daily`. In general removing these types of global variables will allow for easier refactoring of the code in the future, if the fuctions were ever to get moved around, for example.
+  - After you `print(f"SLR Total CV MSE: {cv_mse_slr:.4f}")` and `print(f"MLR Total CV MSE: {cv_mse_mlr:.4f}")`, you could also print an “average per prediction-day MSE” just to make the scale easier to interpret.  
+
+
